@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Test",
+    "address": "Teststreest 1",
+    "cuisine": "Ukrainian",
+    "website": "http://google.com",
+    "description": "It's a test!",
+    "id": "r1"
+  },
+  {
+    "name": "Cafe",
+    "address": "provulok Lisovyij, 2, s. Bobrove",
+    "cuisine": "Italian",
+    "website": "http://italian-cafe.com",
+    "description": "It's great!",
+    "id": "57505cd2-8886-4e9e-8f5c-d1143b35ef22"
+  },
+  {
+    "name": "Nashe Cafe",
+    "address": "Teststreest 1",
+    "cuisine": "Ukrainian",
+    "website": "http://google.com",
+    "description": "kjhyfiuy",
+    "id": "2a031e96-c368-44d8-a564-d8f8e68c98d9"
+  },
+  {
+    "name": "Nashe Cafe",
+    "address": "Teststreest 1",
+    "cuisine": "Ukrainian",
+    "website": "http://google.com",
+    "description": "kjhyfiuy",
+    "id": "d830f9a6-dec1-4818-b528-6027c895e454"
+  },
+  {
+    "name": "Coffe Cafe",
+    "address": "Teststreest 1",
+    "cuisine": "Italian",
+    "website": "http://google.com",
+    "description": "fyujfhkgf",
+    "id": "coffe-cafe"
+  }
+]
