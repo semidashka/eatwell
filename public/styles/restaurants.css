@@ -38,11 +38,11 @@ main {
 }
 
 .restaurant-actions {
-  margin-top: 1rem;
+  margin-top: -2rem;
   text-align: right;
 }
 
-.restaurant-actions a,
+.restaurant-actions button,
 .btn {
   padding: 0.5rem 1.5rem;
   background-color: rgb(202, 158, 62);
@@ -53,8 +53,12 @@ main {
   border: none;
 }
 
-.restaurant-actions a:hover,
-.restaurant-actions a:active,
+.restaurant-actions button:hover,
+.restaurant-actions button:active,
 .btn:hover {
   background-color: rgb(202, 141, 62);
+}
+
+main h3 {
+  margin-top: 4rem;
 }

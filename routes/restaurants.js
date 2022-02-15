@@ -6,7 +6,7 @@ const resData = require("../util/restaurant-data");
 
 const router = express.Router();
 
-router.get('/restaurants', function (req, res) {
+router.get('/restaurants', (req, res) => {
   let order = req.query.order;
   let nextOrder = 'desc';
 
@@ -18,8 +18,7 @@ router.get('/restaurants', function (req, res) {
     nextOrder = 'asc';
   }
 
-  const storedRestaurants = resData.getStoredRestaurants();
-
+  const storedRestaurants = resData.getStoredRestas();
   storedRestaurants.sort((a, b) => {
     if (
       (order === "acs" && a.name > b.name) ||
@@ -37,37 +36,39 @@ router.get('/restaurants', function (req, res) {
   });
 });
 
-router.get("/restaurants/:id", function (req, res) {
-  const restaurantId = req.params.id;
-  const storedRestaurants = resData.getStoredRestaurants();
+router.post('/restaurants', (req, res) => {
 
-  for (const restaurant of storedRestaurants) {
-    if (restaurant.id === restaurantId) {
-      return res.render("restaurant-detail", { restaurant: restaurant });
-    }
-  }
-
-  router.status(404).render("404");
+  resData.addToDataFile(req);
+ 
+  res.json();
 });
+  
 
-router.get('/recommend', function (req, res) {
+// router.get("/restaurants/:id", function (req, res) {
+//   const restaurantId = req.params.id;
+//   const storedRestaurants = resData.getStoredRestas();
+
+//   for (const restaurant of storedRestaurants) {
+//     if (restaurant.id === restaurantId) {
+//       return res.json(restaurant);
+//       // .render("restaurant-detail", { restaurant: restaurant });
+//     }
+//   }
+
+//   router.status(404).render("404");
+// });
+
+router.get('/recommend', (req, res) => {
   res.render('recommend');
 });
 
-router.post('/recommend', function (req, res) {
-  const restaurant = req.body;
-  restaurant.id = restaurant.name.toLowerCase().trim().replace(/\s/g, "-");
-  // restaurant.id = uuid.v4();
-
-  const storedRestaurants = resData.getStoredRestaurants();
-  storedRestaurants.push(restaurant);
-
-  resData.writeRestaurants(storedRestaurants);
-
+router.post('/recommend', (req, res) => {
+  resData.addToDataFile(req);
+  
   res.redirect('/confirm');
 });
 
-router.get("/confirm", function (req, res) {
+router.get("/confirm", (req, res) => {
   res.render("confirm");
 });
 

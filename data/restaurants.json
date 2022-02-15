@@ -1,7 +1,7 @@
 [
   {
     "name": "Test",
-    "address": "Teststreest 1",
+    "adress": "Teststreest 1",
     "cuisine": "Ukrainian",
     "website": "http://google.com",
     "description": "It's a test!",
@@ -9,7 +9,7 @@
   },
   {
     "name": "Cafe",
-    "address": "provulok Lisovyij, 2, s. Bobrove",
+    "adress": "provulok Lisovyij, 2, s. Bobrove",
     "cuisine": "Italian",
     "website": "http://italian-cafe.com",
     "description": "It's great!",
@@ -17,15 +17,7 @@
   },
   {
     "name": "Nashe Cafe",
-    "address": "Teststreest 1",
-    "cuisine": "Ukrainian",
-    "website": "http://google.com",
-    "description": "kjhyfiuy",
-    "id": "2a031e96-c368-44d8-a564-d8f8e68c98d9"
-  },
-  {
-    "name": "Nashe Cafe",
-    "address": "Teststreest 1",
+    "adress": "Teststreest 1",
     "cuisine": "Ukrainian",
     "website": "http://google.com",
     "description": "kjhyfiuy",
@@ -33,10 +25,18 @@
   },
   {
     "name": "Coffe Cafe",
-    "address": "Teststreest 1",
+    "adress": "Teststreest 1",
     "cuisine": "Italian",
     "website": "http://google.com",
     "description": "fyujfhkgf",
     "id": "coffe-cafe"
+  },
+  {
+    "name": "NeNashe Cafe",
+    "adress": "Severodonetsk",
+    "cuisine": "fdghd",
+    "website": "http://google.com",
+    "description": "asdasdf",
+    "id": "nenashe-cafe"
   }
 ]

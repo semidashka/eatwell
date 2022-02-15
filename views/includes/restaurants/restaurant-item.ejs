@@ -3,13 +3,12 @@
     <h2><%= restaurant.name %></h2>
     <div class="restaurant-meta">
       <p><%= restaurant.cuisine %></p>
-      <p><%= restaurant.adress %></p>
+      <!-- <p><%= restaurant.adress %></p> -->
+      <!-- <p><%= restaurant.description %></p> -->
     </div>
-    <p>
-      <%= restaurant.description %>
-    </p>
+    
     <div class="restaurant-actions">
-      <a href="/restaurants/<%= restaurant.id %>">View Restaurant</a>
+      <button class="view-rest-btn" data-restid="<%= restaurant.id %>">See More Details</button>
     </div>
   </article>
 </li>
